@@ -25,7 +25,7 @@ class Btree
 
   public:
     Btree() { root = nullptr; }
-    ~Btree() { destroy_tree(); }
+    ~Btree() { destroy_tree(root); }
 
     void insert(string key);
     node *find(string key) { return find(key, root); }
